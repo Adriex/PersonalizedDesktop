@@ -1,0 +1,9 @@
+com.discordapp.Discord
+com.mattjakeman.ExtensionManager
+com.ultimaker.cura
+de.haeckerfelix.Fragments
+io.bassi.Amberol
+org.gnome.Loupe
+org.onlyoffice.desktopeditors
+org.videolan.VLC
+sa.sy.bluerecorder

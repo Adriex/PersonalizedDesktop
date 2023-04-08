@@ -1,0 +1,18 @@
+dnf-plugins-core
+zsh 
+cheat
+cheat-community-cheatsheets
+tilix
+git 
+
+pip3
+docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+btop
+tlp tlp-rdw
+
+krita
+blender
+inkscape
+octave octave-control
+code
+
