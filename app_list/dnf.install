@@ -2,10 +2,10 @@ dnf-plugins-core
 zsh 
 cheat
 cheat-community-cheatsheets
-tilix
 git 
 util-linux-user
 stow
+sqlite
 
 pip3
 docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
@@ -17,4 +17,5 @@ blender
 inkscape
 octave octave-control
 code
-
+tilix
+gnome-tweaks

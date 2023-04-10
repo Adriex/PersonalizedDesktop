@@ -21,10 +21,11 @@ sudo sh repo_installer
 This will install programs listed in the files, you can check them out before installing.
 
 ```
-sudo sh app_installer dnf app_list/dnf.install.txt
-sudo sh app_installer flatpak app_list/flatpak.install.txt
-sudo sh etc_installer 
+sudo sh app_installer app_list/dnf.install dnf  
+sudo sh app_installer app_list/flatpak.install flatpak
+sudo sh app_list/etc_installer 
 ```
+The etc_installer will do miscelaneous things like install zsh plugins from github, icon packs, etc. anything that can't be done with dnf or flatpak.
 
 ## Install Dotfiles 
 
