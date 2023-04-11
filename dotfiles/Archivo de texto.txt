@@ -1,0 +1,4 @@
+## The Gradience directory for "User preset -> dotfiles" 
+mv ~/.var/app/com.github.GradienceTeam.Gradience/config/presets/user/SolarizedDarkAdriel.json ~/dotfiles/gradiance/.var/app/com.github.GradienceTeam.Gradience/config/presets/user/ && stow -t gradience
+
+
