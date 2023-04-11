@@ -3,6 +3,8 @@
 # get the path to the script's directory
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+echo "$(xdg-user-dir PICTURES)"
+
 # check if Wallpaper directory already exists in the script's directory
 if [ -d "$SCRIPT_DIR/Wallpaper" ]; then
   echo "Wallpaper directory already exists in $SCRIPT_DIR."
@@ -16,12 +18,12 @@ read choice
 # if the user chooses to create symbolic links
 if [ "$choice" == "link" ]; then
   # create symbolic link to Pictures directory in the script's directory
-  ln -s "$(xdg-user-dir PICTURES)" "$SCRIPT_DIR/Wallpaper"
+  ln -s "$SCRIPT_DIR/Wallpaper" "$(xdg-user-dir PICTURES)" #TODO Something is not working
   echo "Symbolic link created successfully."
 # if the user chooses to copy the directory
 elif [ "$choice" == "copy" ]; then
   # copy Pictures directory to the script's directory
-  cp -r "$(xdg-user-dir PICTURES)" "$SCRIPT_DIR/Wallpaper"
+  cp -r "$SCRIPT_DIR/Wallpapers"  "$(xdg-user-dir PICTURES)/Wallpapers"
   echo "Directory copied successfully."
 else
   echo "Invalid choice. Please enter 'link' or 'copy'."
